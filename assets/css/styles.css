@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    font-family: sans-serif;
+    visibility: hidden;
+}
+
+canvas {
+    background: #eee;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#instructions {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 440px;
+    height: 280px;
+    padding: 20px
+}
+
+#instructions > div {
+    position: relative;
+    height: 100%;
+}
+
+#start {
+    width: 100px;
+    height: 30px;
+    box-shadow: 1px 1px 10px gray;
+    background-color: cornflowerblue;
+    border: none;
+    color: white;
+    position: absolute;
+    top: calc(100% - 50px);
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#start:hover {
+    cursor: pointer;
+}
